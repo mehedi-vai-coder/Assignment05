@@ -40,3 +40,5 @@ let title = document.querySelectorAll('#fix-title').innerText
     newPage.addEventListener("click",function(){
         window.location.href ="question.html"
     })
+    
+    

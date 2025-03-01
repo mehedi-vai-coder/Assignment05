@@ -11,7 +11,7 @@ function updateDate() {
     document.getElementById("current-date").innerText = currentDate;
 }
 
-setInterval(updateDate, 1000);
+// setInterval(updateDate, 1000);
 updateDate();
 
 const body = document.body
