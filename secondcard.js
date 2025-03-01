@@ -33,3 +33,10 @@ let title = document.querySelectorAll('#fix-title').innerText
     }
 
     })
+
+    // challange part
+    const newPage = document.getElementById("connect-page")
+
+    newPage.addEventListener("click",function(){
+        window.location.href ="./question.html"
+    })

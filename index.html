@@ -15,10 +15,10 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="poppins-thin max-w-screen-2xl mx-auto">
-  <header>
+<body class="poppins-thin">
+  <header class=" max-w-screen-2xl mx-auto mt-5">
     <nav class="mb-3">
-        <div class="navbar bg-slate-200 rounded-2xl mt-3">
+        <div class="navbar bg-slate-200 rounded-2xl">
             <div class="flex-1">
                 <img class="w-6" src="/assets/logo.png" alt="">
               <p class="ml-1 text-xl">Dev<span class="font-bold">Board</span></p>
@@ -28,13 +28,13 @@
                 <p id="header-value" class="font-bold text-xl">23</p>
             </div>
             <div class="ml-3 bg-[#F4F7FF] p-1 rounded-3xl">
-                <img class="w-6" src="/assets/theme-btn.png" alt="">
+                <img id="color-change" class="w-6" src="/assets/theme-btn.png" alt="">
             </div>
         </div>  
     </header>
 </nav>
  <!-- all cards -->
-   <section class="grid grid-cols-4 gap-6 relative  ">
+   <section class=" max-w-screen-2xl mx-auto grid grid-cols-4 gap-6 relative mb-24  ">
         <div class="flex items-center px-4 py-4 bg-[#F4F7FF] rounded-xl">
             <div class="bg-slate-100 rounded-xl">
                 <div class="p-3 rounded-3xl bg-slate-50">
@@ -46,7 +46,7 @@
             <p id="taskCount" class="font-bold text-2xl">07</p>
             </div>
         </div>
-        <div class="flex items-center px-14 rounded-xl bg-blue-400">
+        <div id="connect-page" class="flex items-center px-14 rounded-xl bg-blue-400 font-bold">
             <div>
              <img src="/assets/board.png" alt="">
             </div>
@@ -196,7 +196,7 @@
          </div>
         
    </section>
-   <script src="/cardclick.js"></script>
+
   <script src="/challange.js"></script>
   <script src="/secondcard.js"></script>
 

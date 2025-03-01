@@ -14,3 +14,9 @@ function updateDate() {
 setInterval(updateDate, 1000);
 updateDate();
 
+const body = document.body
+// This one explore from chatGPT BTW i understood how it works.
+document.getElementById("color-change").addEventListener("click", function () {
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16); 
+    body.style.backgroundColor = randomColor;
+});
