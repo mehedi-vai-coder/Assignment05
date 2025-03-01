@@ -38,5 +38,5 @@ let title = document.querySelectorAll('#fix-title').innerText
     const newPage = document.getElementById("connect-page")
 
     newPage.addEventListener("click",function(){
-        window.location.href ="./question.html"
+        window.location.href ="question.html"
     })
