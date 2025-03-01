@@ -6,8 +6,6 @@
     <title>Dev-Board</title>
     <!-- tailwind  -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- java -->
-    <script src="/script.js" defer ></script>
     <link rel="stylesheet" href="style.css">
       <!--font  -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +23,9 @@
                 <img class="w-6" src="/assets/logo.png" alt="">
               <p class="ml-1 text-xl">Dev<span class="font-bold">Board</span></p>
             </div>
-            <div class="gap-2 rounded-3xl bg-[#F4F7FF] px-4 py-2">
-                <img class="w-4 " src="/assets/checkbox.png" alt="">
-                <p class="font-bold">23</p>
+            <div class="gap-3 rounded-3xl bg-[#F4F7FF] px-4 py-2">
+                <img class="w-6 " src="/assets/checkbox.png" alt="">
+                <p id="header-value" class="font-bold text-xl">23</p>
             </div>
             <div class="ml-3 bg-[#F4F7FF] p-1 rounded-3xl">
                 <img class="w-6" src="/assets/theme-btn.png" alt="">
@@ -45,7 +43,7 @@
             </div>
             <div>
             <p>Task Assigned </p>
-            <p id="Tasign" class="font-bold text-2xl">05</p>
+            <p id="taskCount" class="font-bold text-2xl">06</p>
             </div>
         </div>
         <div class="flex items-center px-14 rounded-xl bg-blue-400">
@@ -60,25 +58,28 @@
                     <img src="/assets/calender.png" alt="">
                 </div>
             </div>
-            <div>
-            <p>Wed, </p>
-            <p class="font-semibold text-xl">Jul 28 2025 </p>
+            <div class="date-card">
+                <div>
+                    <p class="text-xl font-bold" id="current-day"></p>
+                    <h3 class="font-semibold " id="current-date"></h3>
+                </div>
             </div>
         </div>
-        <div id="history" class="space-y-2 row-span-3 bg-slate-50 rounded-xl text-center">
+        <div id="history-log" class="space-y-2 row-span-3 bg-slate-50 rounded-xl text-center">
             <div class="flex gap-2 justify-center mt-6 mb-4">
                 <img src="/assets/activity.png" alt="">
                 <p class="text-xl">Activity Log</p>
             </div>
             <button class=" bg-blue-600 py-3 px-5 text-white  rounded-xl mb-4 ">Clear History</button>
              <hr> 
+             <div id="history-container"></div>
            </div> 
               <!-- card statr from here -->
         <div class=" p-6 bg-blue-200 space-y-4  mt-8 rounded-xl">
            <div class="p-2 text-xs w-20 rounded-xl bg-slate-50">
                <p>ShopEase</p>
            </div>
-           <h4 class="text-2xl font-semibold">Fix Mobile Button Issue </h4>
+           <h4 id="fix-title" class="text-2xl font-semibold">Fix Mobile Button Issue </h4>
            <div class="overflow-y-hidden bg-slate-50 p-2 rounded-2xl">
                <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                    and ensure onClick works properly</p>
@@ -87,7 +88,7 @@
            <div class="flex items-center gap-9">
                <div>
                    <p>Deadline</p>
-                   <p>21 March 2025</p>
+                   <p id="fix-dead">21 March 2025</p>
                </div>
                <div>
                    <button id="Fbtn" class="bg-[#3752FD] p-2 rounded-xl text-white">Completed</button>
@@ -98,7 +99,7 @@
            <div class="p-2 text-xs w-20 rounded-xl bg-slate-50">
                <p>CloudSync</p>
            </div>
-           <h4 class="text-2xl font-semibold">Add Dark Mode </h4>
+           <h4 class="task-title text-2xl font-semibold">Add Dark Mode </h4>
            <div class="overflow-hidden bg-slate-50 p-2 rounded-2xl">
                <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.y</p>
            </div>
@@ -106,10 +107,10 @@
            <div class="flex items-center gap-9">
                <div>
                    <p>Deadline</p>
-                   <p>21 March 2025</p>
+                   <p class="task-deadline">21 March 2025</p>
                </div>
                <div>
-                   <button  class="bg-[#3752FD] p-2 rounded-xl text-white">Completed</button>
+                   <button id="Fbtn"  class="bg-[#3752FD] p-2 rounded-xl text-white">Completed</button>
                </div>
            </div>
          </div>
@@ -195,6 +196,7 @@
          </div>
         
    </section>
-  <script src="history.js"></script>
+   <script src="/cardclick.js"></script>
+  <script src="/challange.js"></script>
 </body>
 </html>

@@ -5,3 +5,16 @@
 *{
   box-sizing: border-box;
 }
+.disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+.log-item {
+  background: #e9ecef;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#current-day{
+   font-size: medium;
+}
