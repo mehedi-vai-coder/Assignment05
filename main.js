@@ -5,7 +5,6 @@ for (let button of allButton){
 
         button.disabled = true
         button.style.backgroundColor = "#a0a0a0";
-        button.style.cursor = "not-allowed";
         alert("Board Updated Successfully")
         let countElement = document.getElementById("taskCount");
         let currentCount = parseInt(countElement.textContent, 10);
