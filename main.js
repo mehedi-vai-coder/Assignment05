@@ -12,12 +12,12 @@ for (let button of allButton){
         let UpperElement = document.getElementById("header-value");
         let upperCount = parseInt(UpperElement.textContent, 10);
         UpperElement.textContent = String(upperCount + 1);
-        let title = document.querySelector("h4")
+        let title = document.querySelector("h4").innerText;
         let container = document.getElementById("history-log");
         let paragraph = document.createElement("p");
         paragraph.classList.add("log-item");
         let now = new Date().toLocaleTimeString();
-        paragraph.innerText = `You have completed the task at ${title.innerText} ${now}`;
+        paragraph.innerText = `You have completed the task at ${title} ${now}`;
         container.append(paragraph);
         let clear = document.getElementById("clear-btn");
         clear.addEventListener("click", function () {
