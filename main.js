@@ -1,5 +1,5 @@
 const allButton = document.querySelectorAll("#Fbtn")
-
+alert("ok")
 for (let button of allButton){
     button.addEventListener("click",function(){
 
