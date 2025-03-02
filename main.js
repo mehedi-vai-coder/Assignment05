@@ -2,6 +2,7 @@ const allButton = document.querySelectorAll("#Fbtn")
 
 for (let button of allButton){
     button.addEventListener("click",function(){
+
         button.disabled = true
         button.style.backgroundColor = "#a0a0a0";
         button.style.cursor = "not-allowed";
@@ -22,6 +23,7 @@ for (let button of allButton){
         let clear = document.getElementById("clear-btn");
         clear.addEventListener("click", function () {
         paragraph.remove()})
+        
     })
    
 }
