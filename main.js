@@ -2,7 +2,7 @@ const allButton = document.querySelectorAll("#Fbtn")
 
 for (let button of allButton){
     button.addEventListener("click",function(){
-
+    
         button.disabled = true
         button.style.backgroundColor = "#a0a0a0";
         alert("Board Updated Successfully")
@@ -22,10 +22,16 @@ for (let button of allButton){
         let clear = document.getElementById("clear-btn");
         clear.addEventListener("click", function () {
         paragraph.remove()})
-        
+        let taskAssign = parseInt(document.getElementById("taskCount").innerText, 10);
+        if (taskAssign === 0) {
+            alert("All tasks are completed!");
+        }
     })
-   
+    
+    
 }
+
+
 
 const newPage = document.getElementById("connect-page")
 newPage.addEventListener("click",function(){
